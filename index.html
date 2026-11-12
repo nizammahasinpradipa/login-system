@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://localhost/login_register/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexura | Account</title>
+    <link rel="stylesheet" href="./index_files/style.css">
+    <link href="./index_files/boxicons.min.css" rel="stylesheet">
+    <link href="./index_files/boxicons-filled.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main active" id="login">
+        <form action="http://localhost/login_register/login_register.php" method="post">
+            <h1>Nexura | Login</h1>
+                        <div class="input-box">
+                <input type="text" placeholder="Username" name="login_input" required="">
+                <i class="bxf bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" name="password" required="">
+                <i class="bxf bx-lock"></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">
+                    Remember me</label>
+                    <a href="http://localhost/login_register/">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn" name="login">
+                Login
+            </button>
+
+            <div class="register-link">
+                <p>Don't have an account?<a href="http://localhost/login_register/#" onclick="showForm('register')">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="main" id="register">
+        <form action="http://localhost/login_register/login_register.php" method="post">
+            <h1>Nexura | Register</h1>
+                        <div class="input-box">
+                <input type="email" name="email" placeholder="Email" required="">
+                <i class="bxf bx-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="text" name="username" placeholder="Username" required="">
+                <i class="bxf bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Password" required="">
+                <i class="bxf bx-lock"></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">
+                    Email me news and updates</label>
+            </div>
+
+            <button type="submit" class="btn" name="register">
+                Register
+            </button>
+
+            <div class="register-link">
+                <p>Already have an account?<a href="http://localhost/login_register/#" onclick="showForm('login')">Login</a></p>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="./index_files/script.js.download"></script>
+
+</body></html>
